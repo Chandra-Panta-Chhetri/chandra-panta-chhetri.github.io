@@ -5,3 +5,8 @@
 .navbar-nav {
   white-space: nowrap;
 }
+
+.navbar .container {
+  display: flex;
+  flex-wrap: initial;
+}
