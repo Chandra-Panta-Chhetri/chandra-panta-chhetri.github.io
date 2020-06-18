@@ -12,49 +12,55 @@
 
 <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse container" id="navbarTogglerDemo01">
+        <div class="container">
             <a class="navbar-brand" href="/">
                 <img src="assets/team-logo.png" alt="team-logo">
             </a>
-            <div class="navbar-nav ml-auto text-uppercase">
-                <a class="nav-item nav-link" href="#">About Us</a>
-                <a class="nav-item nav-link" href="#">Team Expectations</a>
-                <div class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown">
-                        Deliverables
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right">
-                        <a class="dropdown-item" href="#">Personas & User Stories</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarTogglerDemo01">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="navbarTogglerDemo01">
+                <div class="navbar-nav ml-auto text-uppercase">
+                    <a class="nav-item nav-link" href="#">About Us</a>
+                    <a class="nav-item nav-link" href="#">Team Expectations</a>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown">
+                            Deliverables
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="#">Personas & User Stories</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </nav>
-    <div class="jumbotron container mt-3 text-center d-flex flex-column">
-        <h1 class="display-4">Welcome to Team Work</h1>
-        <p class="col-8 align-self-center">
-            A skillful group of CSCC01 students building an MVP
-            that will replace togotoronto.com and showcase local restaurants and
-            restaurant owners in Scarborough.
-        </p>
-    </div>
-    <section class="container px-0 mb-4">
-        <article class="card">
-            <h5 class="card-header text-center">The Problem</h5>
-            <ul class="card-body pl-4">
-                <li class="card-text">
+    <header class="container">
+        <div class="jumbotron mt-3 text-center d-flex flex-column">
+            <h1 class="display-4">Welcome to Team Work</h1>
+            <p class="col-12 col-lg-8 align-self-center">
+                A skillful group of CSCC01 students building an MVP
+                that will replace togotoronto.com and showcase local restaurants and
+                restaurant owners in Scarborough.
+            </p>
+        </div>
+    </header>
+    <section class="container my-4">
+        <article class="alert alert-danger" role="alert">
+            <h4 class="alert-heading text-center bold font-weight-bolder">The Problem</h4>
+            <hr>
+            <ul class="pl-4">
+                <li>
                     Scarborough food can only say so much alone. Chefs and owners have story to tell, but who is
                     listening?
                 </li>
-                <li class="card-text">
+                <li>
                     Downtown and uptown Toronto dining get all the attention, including
                     the togotoronto.com website
                 </li>
-                <li class="card-text">
+                <li>
                     Scarborough food is often lower
                     margin and paying delivery services
                     30% is not sustainable, especially
@@ -63,38 +69,139 @@
             </ul>
         </article>
     </section>
-    <section class="d-flex container px-0 mb-4">
-        <article class="card w-50 mr-5">
-            <h5 class="card-header">Goals</h5>
-            <ul class="card-body pl-4">
-                <li class="card-text">
-                    Create an outstanding platform where restaurant owners and chefs of
-                    Scarborough can tell their story and inspire people to try their food
-                </li>
-                <li class="card-text">
-                    Promote local restaurants in Scarborough and improve the engagement and
-                    number of patrons accessing local food.
-                </li>
-                <li class="card-text">
-                    Hone our development skills while successfully follow current best software engineering
-                    practices
-                </li>
-            </ul>
+    <section class="mb-4 container d-flex flex-column flex-md-row">
+        <article>
+            <section class="card mb-4">
+                <h5 class="card-header text-center">Goals</h5>
+                <ul class="card-body pl-4">
+                    <li>
+                        Create an outstanding platform where restaurant owners and chefs of
+                        Scarborough can tell their story and inspire people to try their food
+                    </li>
+                    <li>
+                        Promote local restaurants in Scarborough and improve the engagement and
+                        number of patrons accessing local food.
+                    </li>
+                    <li>
+                        Hone our development skills while successfully follow current best software engineering
+                        practices
+                    </li>
+                </ul>
+            </section>
+            <section class="card">
+                <h5 class="card-header text-center">Strengths</h5>
+                <ul class="card-body pl-4 mb-0">
+                    <li>
+                        As our team name suggests, we have excellent <span class="font-weight-bolder">teamwork</span>
+                        skills
+                        developed
+                        from working on past school projects together
+                    </li>
+                    <li>
+                        We have exceptional skills in web development developed from
+                        past coop jobs
+                    </li>
+                </ul>
+                <h5 class="pl-4">Technical Expertise</h5>
+                <div class="d-flex flex-column flex-sm-row justify-content-between px-4">
+                    <div>
+                        <h6>Languages</h6>
+                        <ul class="pl-3">
+                            <li>
+                                Java
+                            </li>
+                            <li>
+                                Python
+                            </li>
+                            <li>
+                                C++
+                            </li>
+                            <li>
+                                C
+                            </li>
+                            <li>
+                                Go
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6>Front End</h6>
+                        <ul class="pl-3">
+                            <li>
+                                Vanilla JavaScript
+                            </li>
+                            <li>
+                                Angular
+                            </li>
+                            <li>
+                                Bootstrap
+                            </li>
+
+                            <li>
+                                React
+                            </li>
+                            <li>
+                                HTML/CSS
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6>Back End</h6>
+                        <ul class="pl-3">
+                            <li>
+                                MongoDB
+                            </li>
+
+                            <li>
+                                Express
+                            </li>
+                            <li>
+                                Node.js
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
         </article>
-        <article class="card w-50 ml-5">
-            <h5 class="card-header">Strengths</h5>
-            <ul class="card-body pl-4">
-                <li class="card-text">
-                    Team members have a personal connection to each other and this will greatly
-                    impact how well our team does
+        <article class="border border-black rounded p-3 ml-md-4 mt-4 mt-md-0">
+            <h5 class="text-center">Project Requirements</h5>
+            <ul class="pl-4">
+                <li>
+                    Search engine allowing searches by type of cuisine, location, affordability, ratings and
+                    other categories
                 </li>
-                <li class="card-text">
-                    As our team name suggests, we have excellent teamwork skills
+                <li>
+                    Embed video clips of chefs discussing their menus and providing cooking tips and
+                    stories of how recipes were developed, where and how certain ingredients are
+                    produced and other interesting food stories
+                </li>
+                <li>
+                    Easy to navigate for patrons, and easy to access food (ordering, transaction engine)
+                    and to easily connect this activity to the restaurants themselves
+                </li>
+                <li>
+                    Allow for the creation of digital social networks, building promotional capacity, and a
+                    means to connect with the community of restaurants and the people that frequent
+                    them
+                </li>
+                <li>
+                    promotions and community element may be gamified to increase engagement with
+                    target audiences
+                </li>
+                <li>
+                    Analytics engine providing insights on consumer behavior
+                </li>
+                <li>
+                    Ensure the platform is easy to use so non-technologically sophisticated audiences
+                    can update content
+                </li>
+                <li>
+                    All software developed would be open source, provided as part of a community
+                    initiative
                 </li>
             </ul>
         </article>
     </section>
-
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
