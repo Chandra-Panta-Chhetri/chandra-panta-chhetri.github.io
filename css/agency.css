@@ -1,3 +1,7 @@
 .navbar-brand img {
   width: 18%;
 }
+
+.navbar-nav {
+  white-space: nowrap;
+}
