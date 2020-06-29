@@ -446,7 +446,8 @@
                         </p>
                     </li>
                     <li>
-                        Updated burn-down snapshot. As you can see, the progress of the application is slow, but has begun to pick up as the sprint progressed <br>
+                        Updated burn-down snapshot. As you can see, the progress of the application is slow, but has
+                        begun to pick up as the sprint progressed <br>
                         <p style="text-align:center">
                             <img src="assets/burndown-chart-half-sprint.png" width="80%" height="80%" />
                         </p>
@@ -461,26 +462,187 @@
             <h5 class="card-header bold">System Components</h5>
             <div class="card-body pl-4">
                 <p style="text-align:center">
-                    <img src="assets/component-diagram.png" width="80%" height="80%" />
+                    <img src="assets/component-diagram.png" width="100%" height="100%" /> </br>
+                    <img src="assets/component-diagram-UI.png" width="80%" height="80%" />
+                    <img src="assets/component-diagram-API.png" width="50%" height="50%" />
+                    <img src="assets/component-diagram-DB.png" width="50%" height="50%" />
                 </p>
 
                 <p>
-                <h5>Component Descriptions</h5> </br>
+                <h4>Component Descriptions</h4> </br>
+                <h5>User Interface</h5>
                 <h6>Navigation Bar</h6>
                 <p>
                     Component responsible for the navigation throughout the website. Provides links to the Home, Login,
-                    User registration and restaurant registration pages. It is present on all 4 of these pages and redirects
-                    to the corresponding pages when clicked.
+                    User registration and restaurant registration pages. It is present on all 4 of these pages and
+                    redirects to the corresponding pages when clicked.
                 </p>
 
                 <h6>Landing Home Page</h6>
                 <p>
-                The first page the user will see when accessing the site. Provides information on the benefits of the
-                site for both users and restaurants. Also provides a button to navigate to the "About Us" for more
-                information
+                    The first page the user will see when accessing the site. Provides information on the benefits of
+                    the site for both users and restaurants. Also provides a button to navigate to the "About Us" for
+                    more information.
                 </p>
 
-                List of dependencies.
+                <h6>Login Page</h6>
+                <p>
+                    This page prompts users to enter their credentials to login to their account. This information is
+                    retrieved through the login form component. This page needs to communicate to API for verification.
+                </p>
+
+                <h6>User Registration Page</h6>
+                <p>
+                    This page is for new customer users to sign up on the site. The information is collected through the
+                    user registration form. This component needs to communicate with the API to store user’s information
+                    into the database.
+                </p>
+
+                <h6>Restaurant Registration Page</h6>
+                <p>
+                    This page is for new restaurant owners to sign up their restaurants on the site, where the required
+                    information is collected through the restaurant registration form. This component needs to
+                    communicate with the API to store restaurant’s information into the database.
+                </p>
+
+                <h6>User Dashboard</h6>
+                <p>
+                    This page is the view the customer user sees after logging in on the site. This page shows users a
+                    list of restaurants and lets them filter and search for restaurants. This component needs to
+                    communicate to API to get the restaurant suggestions list for the user.
+                </p>
+
+                <h6>Restaurant Dashboard</h6>
+                <p>
+                    This page is the view the user sees after logging in as a restaurant. Here the most recent
+                    restaurant analytics are displayed. Alongside this there is a button that allows the user to
+                    navigate to the edit restaurant view to modify their restaurant info.
+                </p>
+
+                <h6>Edit Restaurant Info Form</h6>
+                <p>
+                    This form is for restaurant owners to edit information about their restaurant. This component needs
+                    to communicate to API to change the information in the database.
+                </p>
+
+                <h6>Order Cart</h6>
+                <p>
+                    This is a list of items from a restaurant’s menu, which contains the items a customer user is trying
+                    to order. It should have checkout button and cancel order/item button. This component needs to
+                    communicate to API once an order is placed.
+                </p>
+
+                <h6>Order Cart</h6>
+                <p>
+                    This is a list of items from a restaurant’s menu, which contains the items a customer user is trying
+                    to order. It should have checkout button and cancel order/item button. This component needs to
+                    communicate to API once an order is placed.
+                </p>
+
+                <h6>Restaurant Page (User View)</h6>
+                <p>
+                    This is the page that the user sees when they select a restaurant from their search results. It
+                    includes the menu which is generated by the API reading the restaurants items from the database. In
+                    this page, the user can also view the chef’s pages.
+                </p>
+
+                <h6>Order History</h6>
+                <p>
+                    This page shows the history of the orders a customer user has placed in the past. This component
+                    needs to communicate to the database inorder to get the order history.
+                </p>
+
+                <h6>Payment Form</h6>
+                <p>
+                    This page is shown to the customer user once an order has been checked out. This lets the user
+                    select an option to either pay by cash or pay by card. This component needs to communicate to API in
+                    order to verify and process payment.
+                </p>
+
+                <h6>Chef Page</h6>
+                <p>
+                    This page shows a list of chefs in the database. This component needs to communicate in order to
+                    read chef data from the database.
+                </p>
+
+                <h6>Edit chef page form</h6>
+                <p>
+                    This form is for chef users to edit information about themselves and add more dishes. This component
+                    needs to communicate to API to change the information in the database.
+                </p>
+
+                <h6> Upload videos/pictures form</h6>
+                <p>
+                    This form is for chef users to add pictures and videos to their profile. This component needs to
+                    communicate to API to edit information in the database.
+                </p>
+
+                <h6>Menu Page</h6>
+                <p>
+                    This page is shown once a customer user selects a restaurant to order food from. This component is
+                    dependent on API to get menu items from.
+                </p>
+
+                <h6>Edit item form</h6>
+                <p>
+                    This form is shown once a restaurant user selects to edit information in the menu of their
+                    restaurant. This component is dependent on API to change information in the database.
+                </p>
+
+                <h6>Add item form</h6>
+                <p>
+                    This form is shown once a new restaurant user selects to add information in the menu of
+                    their restaurant. This component is dependent on API to change information in the database.
+                </p>
+
+                <h5>API</h5>
+                <h6>User Authentication</h6>
+                <p>
+                    This authentication is for verifying user credentials (username, password). This is dependent on the
+                    database to verify information.
+                </p>
+
+                <h6>CRUD Functions for Items</h6>
+                <p>
+                    This component is responsible to create,update and remove menu items for a restaurant. This
+                    component makes changes in the database.
+                </p>
+
+                <h6>CRUD Functions for Restaurant info</h6>
+                <p>
+                    This component is responsible to edit restaurant’s information. This component makes changes in the
+                    database.
+                </p>
+
+                <h6>CRUD Functions for User info</h6>
+                <p>
+                    This component is responsible to edit user’s information. This component makes changes in the
+                    database.
+                </p>
+
+                <h5>Database</h5>
+                <h6>User Collection</h6>
+                <p>
+                    This collection is for storing user’s information. The fields stored are determined by the role of
+                    the user (customer or restaurant).
+                </p>
+
+                <h6>Menu Items Collection</h6>
+                <p>
+                    This collection is for storing restaurant menus.
+                </p>
+
+
+
+
+
+
+
+
+
+
+
+
             </div>
         </article>
     </section>
@@ -488,16 +650,22 @@
         <article class="card">
             <h5 class="card-header bold">Sprint Overview</h5>
             <div class="card-body pl-4">
-                <p class="bold">NOTE: Although a complete sprint has not completed for this group, we will attempt to answer the following
-                    questions to the best of our abilities. As mentioned above, our sprint ends on July 6th, 2020 and we will attempt to update the following 
+                <p class="bold">NOTE: Although a complete sprint has not completed for this group, we will attempt to
+                    answer the following
+                    questions to the best of our abilities. As mentioned above, our sprint ends on July 6th, 2020 and we
+                    will attempt to update the following
                     as soon as possible.
                 </p>
-                
+
                 <h5>Project Velocity</h5>
-                <p> With nearly half the sprint completed, we feel that the project is moving at a good pace. Although the burndown chart may show that the rate
-                    at which tasks are completed are slow this is largely due to the learning curve that came with learning the technology required to build the project. 
-                    With the daily talks that the team has, we are beginning to understand how develop effectively using the technology we have, and are picking up the pace of development. 
-                    We believe that by the end of the sprint, we will be able to accomplish what we had set out initially.
+                <p> With nearly half the sprint completed, we feel that the project is moving at a good pace. Although
+                    the burndown chart may show that the rate
+                    at which tasks are completed are slow this is largely due to the learning curve that came with
+                    learning the technology required to build the project.
+                    With the daily talks that the team has, we are beginning to understand how develop effectively using
+                    the technology we have, and are picking up the pace of development.
+                    We believe that by the end of the sprint, we will be able to accomplish what we had set out
+                    initially.
                 </p>
                 <p> Below is the burndown chart that depicts the progress of the team from estimated to actual.</p>
 
@@ -506,18 +674,21 @@
                 </p>
 
                 <h5>Sprint Reflection</h5>
-                <p> The plans set out by the team were initially thrown off track a little bit by the set up process that was involved for the project. However, after overcoming
-                    the inital set up that was required to run the project, the team got right back on track and began completing tasks as they were planned. In the end, it seems
+                <p> The plans set out by the team were initially thrown off track a little bit by the set up process
+                    that was involved for the project. However, after overcoming
+                    the inital set up that was required to run the project, the team got right back on track and began
+                    completing tasks as they were planned. In the end, it seems
                     that we have balanced out the initial pace set out and the current pace of development.
                 </p>
                 <p>
-                    Luckily for our project, we have not needed to use our contingency plan. Developers have been following their tasks fairly well and have not needed to resort to
+                    Luckily for our project, we have not needed to use our contingency plan. Developers have been
+                    following their tasks fairly well and have not needed to resort to
                     any other methods for completing tasks.
                 </p>
             </div>
 
         </article>
-    </section> 
+    </section>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="js/agency.js"></script>
