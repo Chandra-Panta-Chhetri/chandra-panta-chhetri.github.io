@@ -43,9 +43,9 @@
     </nav>
     <header class="container">
         <div class="jumbotron mt-3 text-center d-flex flex-column">
-            <h1 class="display-4">Project Plan Update</h1>
+            <h1 class="display-4">Final Project Update</h1>
             <p class="col-12 col-lg-8 align-self-center">
-                An updated plan of our project after completing our first sprint
+                The Final Update on our project
             </p>
         </div>
     </header>
@@ -55,83 +55,31 @@
             <div class="card-body pl-4">
                 <ul>
                     <li>
-                        Landing Page looks amazing according to client, they
-                        like how it is very modern and does not have unnecessary
-                        information.
-                        <ul>
-                            <li>
-                                Parts Client Liked:
-                                <ul>
-                                    <li>
-                                        The Landing Page directs them to an image that brings out
-                                        the environment of food.
-                                    </li>
-                                    <li>
-                                        Restaurants and Foodies (our users) know the interesting
-                                        benefits of signing up on the landing page
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                Suggestions:
-                                <ul>
-                                    <li>
-                                        Change Text on Landing Page for restaurant owners and foodies
-                                    </li>
-                                    <li>
-                                        Make a split between restaurant owners and foodies
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
+                        The Restaurant Information page should have a central image of space for video,
+                        in addition to a bit of write-up.
                     </li>
                     <li>
-                        Login was generic, which is what client wanted and was happy about. They also liked how the 
-                        login page backend worked a bit and was able to move to the dashboard
-                        <ul>
-                            <li>
-                                Suggestions:
-                                <ul>
-                                    <li>
-                                        Maybe adding alternative login methods, instead of one generic login
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
+                        The page for chefs doesn’t resonate with most of the restaurants, that would be
+                        more fitting for fine dining.
                     </li>
                     <li>
-                        Registration for both Restaurant and Foodie was really good, the clients liked how 
-                        we added validations on each field, so users couldn’t put random information. They liked 
-                        how the questions we asked on the sign-up form.
-                        <ul>
-                            <li>
-                                Suggestions
-                                <ul>
-                                    <li>
-                                        Going online to Uber Eats forms and see what extra questions they ask 
-                                        their users and see if it makes sense for Scarborough Dining
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
+                        Current design works well with what we’ve envisioned and is a good step in the
+                        right direction!
                     </li>
                     <li>
-                        Extra Features We Added:
+                        Questions We Asked the Client:
                         <ul>
                             <li>
-                                The clients liked how we added a slideshow of ads on the login and registration 
-                                page, where restaurant owners or Scarborough dining can put ads
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        What Features To Add Later:
-                        <ul>
-                            <li>
-                                Store Preferences for some users
+                                What theme would you like?
                             </li>
                             <li>
-                                For Chef Page, ask about awards and maybe add photos and videos
+                                Would you like to review a prototype of some of our upcoming pages?
+                            </li>
+                            <li>
+                                Will we get the logo for the app soon?
+                            </li>
+                            <li>
+                                Are there any changes you would like to see on currently built design?
                             </li>
                         </ul>
                     </li>
@@ -141,67 +89,19 @@
     </section>
     <section class="container px-0 mb-4">
         <article class="card">
-            <h5 class="card-header bold">Updated GitHub Repo Structure</h5>
+            <h5 class="card-header bold">Our Test Strategy</h5>
             <div class="card-body pl-4">
                 <ul class="pl-4">
-
                     <li>
                         <p>
-                            <b>How will you use your repository on GitHub?</b>
+                            <b>End to End Testing</b>: Tested the overall flow of our site, to ensure the components
+                            were workinf together as expected.
                             </br>
-                        <p>
-                            The branching structure of our GitHub repo will consist of four main types of branches
-                        <p style="text-align:center">
-                            <img src="assets/branching-structure.JPG" width="50%" height="50%" />
                         </p>
-                        <ol>
-                            <li>
-                                <b>Master Branch</b>: This branch contains production ready code.
-                            </li>
-                            <li>
-                                <b>Dev Branch</b>: This branch contains the code using dev environment variables.
-                            </li>
-                            <li>
-                                <b>Feature X Branch</b>: This branch contains the code specific to a user story/task and
-                                is
-                                branched from the Dev branch. </br>
-                                It will follow the naming convetion:
-                                <i>featureDesc</i>_&lt;<i>user_story_id</i>&gt;_&lt;<i>taskNumber</i>&gt;
-                            </li>
-                            <li>
-                                <b>QA Branch</b>: This branch contains all the code to be tested. Features are pushed
-                                here to be tested
-                                and merged to dev.
-                            </li>
-                            <li>
-                                <b>Hotfix X Branch</b>: This branch contains fix for the bug corresponding to bug_id.
-                                For every
-                                bug discovered a card willbe added to our Jira board which will contain the bug_id of
-                                that bug.
-                                This branch also branches of the Dev branch</br>
-                                The hotfix branch will follow the name convention: <i>hotfix</i>_&lt;<i>bug_id</i>&gt;
-                            </li>
-                            <li>
-                                <b>Commits and Merges</b>: When a developer commits any portion of code, the commits
-                                must be coherent and logically grouped.
-                                For example, 2 changes that are not related should not be grouped into a single commit
-                                and should be separated, however 2 changes that are part
-                                of the same change should be put into a single commit. Commits must also be small and
-                                logical, large commits tend to be difficult to read and follow and hence
-                                we will refrain from making such changes. Commit messages must succintly summarize what
-                                changes were made for other developers to understand the code at any
-                                point as well assist in debugging for any developer. Commit messages do not need to have
-                                any specific format as long as they allow other developers to understand
-                                changes that were made.
-                            </li>
-                            <li>
-                                <b>Documentation and Style</b>:
-                                Code style must follow React best practices and must be readable by other developers.
-                                Any code that is pushed onto the main remote repository must come with
-                                comments that describe the code and be properly documented for other developers to use.
-                            </li>
-                        </ol>
-                        </p>
+                    </li>
+                    <li>
+                        <b>Unit Testing</b>: Tested the overall functionalities of the backend code is working as
+                        expected.
                     </li>
                 </ul>
             </div>
@@ -210,17 +110,16 @@
 
     <section class="container px-0 mb-4">
         <article class="card">
-            <h5 class="card-header bold">Updated Product Backlog</h5>
+            <h5 class="card-header bold">Final Product Backlog</h5>
             <div class="card-body pl-4">
                 <p>
-                    After completing our first sprint and receiving feedback on our previous deliverable, we
-                    realized our backlog needed some modifications. Hence we now updated it to follow typical
-                    product backlog practices, by removing the subtasks and keeping only the stories and
-                    grouping the stories by features for more organization.
+                    The product backlog contained all of the remaining tasks that were set out by the client 
+                    as well as additional ones we created. Our best attempt was made to complete all tasks 
+                    that remained in the backlog.
                 </p>
                 <p style="text-align:center">
-                    <img src="assets/product-backlog-updated.png" width="80%" height="80%" />
-                    </br> The full updated product backlog can be found in excel format on our <a
+                    <img src="assets/final-backlog.png" width="80%" height="80%" />
+                    </br> The full final product backlog can be found in excel format on our <a
                         href="https://github.com/CSCC01/team_06-project/blob/master/deliverables/deliverable-4/Sprint_and_Product_Backlogs.xlsx">Github
                     </a>
                 </p>
@@ -230,12 +129,10 @@
 
     <section class="container px-0 mb-4">
         <article class="card">
-            <h5 class="card-header bold">Updated Release Plan</h5>
+            <h5 class="card-header bold">Final Release Plan</h5>
             <div class="card-body pl-4">
-                Our sprints will still last for 2 weeks or 10 business days. But, due to Canada Day
-                occurring during one of our sprints, the sprint dates have been shifted by one day to
-                accommodate. This extra day added on to each sprint is used to finalize our merges and
-                approve the release pull request to the master branch.
+                After our previous modification, we stuck to the current release plan,
+                as it fit our schedules the best and allowed us to put forth our best work.
 
                 <table style="width:60%" border="1px" align="center">
                     <tr align="center">
@@ -264,13 +161,13 @@
 
     <section class="container px-0 mb-4">
         <article class="card">
-            <h5 class="card-header bold">Sprint 2 Plan</h5>
+            <h5 class="card-header bold">Final Sprint Plan</h5>
             <div class="card-body pl-4">
                 <ul>
                     <li>
-                        Sprint 2 Backlog Snapshot:
+                        Sprint 4 Backlog Snapshot:
                         <p style="text-align:center">
-                            <img src="assets/sprint2-backlog.png" width="80%" height="80%" />
+                            <img src="assets/finalsprint-backlog.png" width="80%" height="80%" />
                         </p>
 
                         <p>
@@ -284,56 +181,9 @@
 
                     </li>
                     <li>
-                        Rough Plan of who will do what:
-                        <table style="width:60%" border="1px" align="center">
-                            <tr align="center">
-                                <th>Member</th>
-                                <th>Assigned Tasks</th>
-                            </tr>
-                            <tr>
-                                <td>Harshit</td>
-                                <td>SD-90. SD-88, SD-82, SD-81, SD-43</td>
-                            </tr>
-                            <tr>
-                                <td>Jenisha</td>
-                                <td>SD-106, SD-80, SD-114, SD-83</td>
-                            </tr>
-                            <tr>
-                                <td>Chandra</td>
-                                <td>SD-4, SD-112, SD-109, SD-107, SD-113, SD-111, SD-108, SD-103, SD-91 </td>
-                            </tr>
-                            <tr>
-                                <td>Sumuhash</td>
-                                <td>SD-117, SD-118, SD-119, SD-50, SD-85, SD-86</td>
-                            </tr>
-                            <tr>
-                                <td>Aaditya</td>
-                                <td>SD-95, SD-72, SD-52, SD-53, SD-102</td>
-                            </tr>
-                        </table>
-                        <p>
-                            </b>
-                        </p>
-
-                    </li>
-                    <li>
-                        Inital Jira snapshot (Sprint 2):
+                        Final Jira snapshot (Sprint 4):
                         <p style="text-align:center">
-                            <img src="assets/sprint2-board.png" width="80%" height="80%" />
-                        </p>
-                    </li>
-                    <li>
-                        Initial burn-down snapshot <br>
-                        <p style="text-align:center">
-                            <img src="assets/burndown-chart-sprint2-start.png" width="80%" height="80%"
-                                alt="Burndown Chart" />
-                        </p>
-                    </li>
-                    <li>
-                        Updated burn-down snapshot. As you can see, the progress of the application is slow, but has
-                        begun to pick up as the sprint progressed <br>
-                        <p style="text-align:center">
-                            <img src="assets/burndown-chart-sprint2-end.png" width="80%" height="80%" />
+                            <img src="assets/finalsprint-board.png" width="80%" height="80%" />
                         </p>
                     </li>
                 </ul>
@@ -343,13 +193,13 @@
 
     <section class="container px-0 mb-4">
         <article class="card">
-            <h5 class="card-header bold">Updated System Components</h5>
+            <h5 class="card-header bold">Finalized System Components</h5>
             <div class="card-body pl-4">
                 <p style="text-align:center">
-                    <img src="assets/component-diagram-updated.png" width="100%" height="100%" /> </br>
-                    <img src="assets/component-diagram-UI-updated.png" width="80%" height="80%" />
-                    <img src="assets/component-diagram-API-updated.png" width="50%" height="50%" />
-                    <img src="assets/component-diagram-DB-updated.png" width="50%" height="50%" />
+                    <img src="assets/final-component-diagram.png" width="100%" height="100%" /> </br>
+                    <img src="assets/final-component-diagram-UI.png" width="80%" height="80%" />
+                    <img src="assets/final-component-diagram-API.png" width="50%" height="50%" />
+                    <img src="assets/final-component-diagram-db.png" width="50%" height="50%" />
                 </p>
 
                 <p>
@@ -534,43 +384,96 @@
     </section>
     <section class="container px-0 mb-4">
         <article class="card">
-            <h5 class="card-header bold">Sprint 2 Overview</h5>
+            <h5 class="card-header bold">Project Saga</h5>
             <div class="card-body pl-4">
-                <p class="bold">NOTE: Our sprint ends on July 21th, 2020 and we 
-                    will attempt to update the following as soon as possible.
+                <p>
+                    Initially the project had a shaky start. The group had very little idea on what technology to use to
+                    develop the app. Later on we settled on the MERN stack as it was modern and there was good community
+                    support so solutions would be easy to find. When it came to actually setting up the project, many of
+                    us were unfamiliar with the stack and setting up took several days of time. As a result, the project
+                    had a slow initial start. As we approached the completion of the first sprint, most group members
+                    became familiar with the technology and development quickly sped up. Our initial client meeting demo
+                    showed some good results, and we were given good feedback to bring the app more in line with the
+                    client’s
+                    requirements and interpretation of the app.
+                </p>
+                <p>
+                    During the second sprint, the team progressed far faster and was able to develop many of the
+                    required
+                    features that the client had requested. However, after the second sprint had completed the client
+                    meetings
+                    indicated some large changes in our application that we would need to change for the final release.
+                    As
+                    a result of this meeting, some replanning had to be done during the start of the third sprint.
+                </p>
+                <p>
+                    A majority of the third sprint was spent adding the finishing touches to our project and making sure
+                    we met
+                    the requirements made by the client. As the sprint cumulated, we had finished the requirements set
+                    out and had
+                    written some unit tests to verify that the product is working, as well as added the changes
+                    requested by the
+                    client. With the other deadlines approaching, our best attempt was made at the project during the
+                    last week to
+                    provide as much of a complete product as we could.
                 </p>
 
                 <h5>Project Velocity</h5>
-                <p> Compared to our previous sprint, this sprint saw a tremendous improvement in terms of velocity.
-                    We estimated our velocity to be 38 points by the end of this sprint. Our actual velocity, with
-                    1 day remaining is 29.5, leaving just 8.5 points to be completed. This is a great improvement
-                    from our last sprint, where our actual velocity was about half of our estimated velocity.
-                </p>
-                <p> Below is the burndown chart that depicts the progress of the team from estimated to actual.</p>
+                <table style="width:60%" border="1px" align="center">
+                    <tr align="center">
+                        <th>Sprint Number</th>
+                        <th>Estimated Point Velocity</th>
+                        <th>Actual Project Velocity</th>
+                    </tr>
+                    <tr>
+                        <td>Sprint 1</td>
+                        <td>91.5 Story points</td>
+                        <td>47.5 Story points</td>
+                    </tr>
+                    <tr>
+                        <td>Sprint 2</td>
+                        <td>38 Story points</td>
+                        <td>31.5 Story points</td>
+                    </tr>
+                    <tr>
+                        <td>Sprint 3</td>
+                        <td>103 Story points</td>
+                        <td>60 Story points</td>
+                    </tr>
+                </table>
 
-                <p style="text-align:center">
-                    <img src="assets/burndown-chart-sprint2-end.png" width="80%" height="80%" />
+
+                <h5>Planning and Replanning</h5>
+                <p> During the first sprint and first half of the second sprint, we had a relatively smooth sailing 
+                    experience. The project was going as planned. However, there was some replanning that needed to 
+                    be done during the latter of sprint 2 and beginning of sprint 3. Both these periods of replanning 
+                    were needed due to changes in client requirements. The client no longer required that we have a 
+                    view for the chef of a restaurant, as well, they recommended some modifications to the landing 
+                    page that required us to rework quite a bit of the front-end of the application.
                 </p>
 
-                <h5>Sprint Reflection</h5>
-                <p> After Sprint 1, the team learned that putting in proper time to plan out our tasks
-                    was incredbly important. So this sprint we set aside a day for sprint planning
-                    where we discussed the sprint plan in detail. Due to this, we determined a more
-                    realistic plan which we followed consistently throughout the week.
-                    <br>
-                    Our project progressed quite well from Sprint 1 to Sprint 2, we managed to fully
-                    implement the login functionality, as well as the menu page for a restaurant user.
-                    Upon logging in as a restaurant user, they are redirected to the restaurant dashboard,
-                    where they can view their restaurant's info, menu and chefs. The ability to edit a restaurant's
-                    item is also working. Alongside this we have set up the components required to add and delete the
-                    items and will begin connecting them in the next sprint.
-                </p>
+                <h5>Deliverable 5 Work Compared to Previous Deliverables</h5>
                 <p>
-                    Luckily for our project, we have not needed to use our contingency plan. Developers have been
-                    following their tasks fairly well and have not needed to resort to any other methods for completing
-                    tasks. If anyone was having difficulties completing their tasks, we all worked together to ensure
-                    they got the help they needed, by setting up meetings to discuss the code.
+                    Deliverable 5 sprint may have not gone too well compared to what we had initially planned. The reason 
+                    being is because we did not take into consideration that all our courses would be having similar due 
+                    dates, since the semester is coming to an end. In the first sprint, we overestimated our points, because 
+                    we didn't realise there was a huge learning curve for the members not familiar with the MongoDB, React, 
+                    Express and also Node.js. Even If some knew a little, this project requires a deep understanding of these 
+                    languages/database to truly use these tools efficiently. Our second sprint was our best sprint, since we 
+                    took into consideration each member's skill in each language and we used that to assign tasks to maximize 
+                    the efficiency and to allow people to learn properly.
                 </p>
+
+                <p>
+                    For the latest sprint we finished, we thought we would be able to finish more tasks, since we all got familiar
+                     with the MERN stack and sprint 2 was a success. Hence, we chose to do 103 Story points. But we ended up only 
+                     completing 60 story points, because of certain troubles we all had during the week with other course 
+                     assignments/presentations we were not expecting. Even if the story points were significantly less, we still 
+                     managed to finish the priority pages that the clients wanted like the restaurant page, landing page redesign, 
+                     discover restaurant page, analytics and resigned about us page for this sprint. We believe that this sprint went
+                      successfully in terms of completing pages that the client wanted us to fix.
+                </p>
+
             </div>
         </article>
     </section>
